@@ -1,0 +1,42 @@
+
+.col-lg-4 {
+  float: left;
+  position: left;
+  text-align:left
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #003300;
+  border-color: #008000;
+  text-shadow: 2px 2px black;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #ffffff;
+  background-color: #CC9900;
+  border-color: #008000;
+  text-shadow: 2px 2px black;
+}
+
+.panel-primary {
+  border-color: #003300;
+}
+
+.panel-primary > .panel-heading {
+  color: #ffffff;
+  background-color: #003300;
+  border-color: #003300;
+  text-shadow: 2px 2px black;
+}
+
+
+
+
