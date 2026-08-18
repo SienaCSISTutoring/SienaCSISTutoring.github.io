@@ -41,7 +41,8 @@
       if (photo && tutor.photo && isSafeImageSource(tutor.photo.src)) {
         photo.src = tutor.photo.src;
         photo.style.display = '';
-        photo.alt = (typeof tutor.photo.alt === 'string' && tutor.photo.alt) ||
+        photo.alt = typeof tutor.photo.alt === 'string' ?
+          tutor.photo.alt :
           (typeof tutor.name === 'string' ? tutor.name : '');
       } else if (photo) {
         photo.removeAttribute('src');
