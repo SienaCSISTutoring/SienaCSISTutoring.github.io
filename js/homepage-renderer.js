@@ -13,7 +13,7 @@
 
     return /^https?:\/\//i.test(value) ||
       /^\/(?!\/)/.test(value) ||
-      /^\.\.?\//.test(value) ||
+      /^\.\//.test(value) ||
       /^[A-Za-z0-9._-]+(?:\/[A-Za-z0-9._-]+)*$/.test(value);
   }
 
@@ -40,6 +40,8 @@
 
       if (photo && tutor.photo && isSafeImageSource(tutor.photo.src)) {
         photo.src = tutor.photo.src;
+      } else if (photo) {
+        photo.removeAttribute('src');
       }
       if (photo && tutor.photo && typeof tutor.photo.alt === 'string') {
         photo.alt = tutor.photo.alt;
