@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Daniel Cater",
+    "photo": {
+      "src": "img/Dan.jpg",
+      "alt": "Daniel Cater"
+    },
+    "availability": [
+      "Tuesday 6:00pm - 8:00pm",
+      "Wednesday 4:00pm - 6:00pm"
+    ],
+    "courses": [
+      "CSIS-110",
+      "CSIS-120",
+      "CSIS-210"
+    ]
+  },
+  {
+    "name": "Andrew Sauer",
+    "photo": {
+      "src": "img/andrewSauer.jpeg",
+      "alt": "Andrew Sauer"
+    },
+    "availability": [
+      "Tuesday 6:00pm - 8:00pm",
+      "Wednesday 4:00pm - 6:00pm"
+    ],
+    "courses": [
+      "CSIS-110",
+      "CSIS-120",
+      "CSIS-210",
+      "CSIS-011"
+    ]
+  },
+  {
+    "name": "Dylan Iddings",
+    "photo": {
+      "src": "img/Dylan.jpg",
+      "alt": "Dylan Iddings"
+    },
+    "availability": [
+      "Wednesday 4:00pm - 6:00pm"
+    ],
+    "courses": [
+      "CSIS-110",
+      "CSIS-120",
+      "CSIS-210",
+      "CSIS-011"
+    ]
+  },
+  {
+    "name": "Nick Zica",
+    "photo": {
+      "src": "img/nickzica.jpg",
+      "alt": "Nick Zica"
+    },
+    "availability": [
+      "Wednesday 4:00pm - 6:00pm"
+    ],
+    "courses": [
+      "CSIS-110",
+      "CSIS-120",
+      "CSIS-210",
+      "CSIS-011"
+    ]
+  }
+]
