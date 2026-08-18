@@ -40,8 +40,10 @@
 
       if (photo && tutor.photo && isSafeImageSource(tutor.photo.src)) {
         photo.src = tutor.photo.src;
+        photo.style.display = '';
       } else if (photo) {
         photo.removeAttribute('src');
+        photo.style.display = 'none';
       }
       if (photo && tutor.photo && typeof tutor.photo.alt === 'string') {
         photo.alt = tutor.photo.alt;
