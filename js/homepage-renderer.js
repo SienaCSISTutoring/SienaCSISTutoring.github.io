@@ -1,6 +1,22 @@
 (function ($) {
   'use strict';
 
+  function isSafeImageSource(source) {
+    if (typeof source !== 'string') {
+      return false;
+    }
+
+    var value = source.trim();
+    if (!value) {
+      return false;
+    }
+
+    return /^https?:\/\//i.test(value) ||
+      /^\/(?!\/)/.test(value) ||
+      /^\.\.?\//.test(value) ||
+      /^[^:/?#]+(?:\/[^?#]*)?$/.test(value);
+  }
+
   function renderTutorCards(tutors) {
     var slot = document.getElementById('tutor-cards-slot');
     var template = document.getElementById('tutor-card-template');
@@ -22,7 +38,7 @@
       var availability = card.querySelector('.tutor-card-availability');
       var courses = card.querySelector('.tutor-card-courses');
 
-      if (photo && tutor.photo && typeof tutor.photo.src === 'string') {
+      if (photo && tutor.photo && isSafeImageSource(tutor.photo.src)) {
         photo.src = tutor.photo.src;
       }
       if (photo && tutor.photo && typeof tutor.photo.alt === 'string') {
