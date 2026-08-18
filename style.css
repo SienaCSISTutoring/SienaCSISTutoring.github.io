@@ -11,3 +11,50 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.tutoring-content-row {
+  margin-top: 10px;
+}
+
+.tutor-card-grid .col-sm-6 {
+  margin-bottom: 20px;
+}
+
+.tutor-card {
+  height: 100%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.tutor-card h3 {
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.tutor-card-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.sidebar-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 15px;
+  background: #f9f9f9;
+  margin-bottom: 20px;
+}
+
+.sidebar-card h3 {
+  margin-top: 0;
+}
+
+.qr-signup-image {
+  display: block;
+  width: 160px;
+  max-width: 100%;
+  margin: 10px auto;
+}
