@@ -41,12 +41,12 @@
       if (photo && tutor.photo && isSafeImageSource(tutor.photo.src)) {
         photo.src = tutor.photo.src;
         photo.style.display = '';
+        photo.alt = (typeof tutor.photo.alt === 'string' && tutor.photo.alt) ||
+          (typeof tutor.name === 'string' ? tutor.name : '');
       } else if (photo) {
         photo.removeAttribute('src');
         photo.style.display = 'none';
-      }
-      if (photo && tutor.photo && typeof tutor.photo.alt === 'string') {
-        photo.alt = tutor.photo.alt;
+        photo.alt = '';
       }
       if (name && typeof tutor.name === 'string') {
         name.textContent = tutor.name;
