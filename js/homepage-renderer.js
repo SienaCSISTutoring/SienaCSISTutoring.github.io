@@ -14,7 +14,7 @@
     return /^https?:\/\//i.test(value) ||
       /^\/(?!\/)/.test(value) ||
       /^\.\.?\//.test(value) ||
-      /^[^:/?#]+(?:\/[^?#]*)?$/.test(value);
+      /^[A-Za-z0-9._-]+(?:\/[A-Za-z0-9._-]+)*$/.test(value);
   }
 
   function renderTutorCards(tutors) {
