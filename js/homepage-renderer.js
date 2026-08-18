@@ -102,8 +102,8 @@
         setAttr('qr-sidebar-image', 'alt', content.studentSignIn.image.alt);
       }
       if (content.studentSignIn.link) {
-        setAttr('qr-sidebar-link', 'href', content.studentSignIn.link.href);
         setText('qr-sidebar-link', content.studentSignIn.link.text);
+        setAttr('qr-sidebar-link', 'href', content.studentSignIn.link.href);
       }
     }
   }
@@ -113,12 +113,17 @@
   }
 
   $(function () {
-    $.when(
-      $.getJSON('data/homepage-content.json'),
-      $.getJSON('data/tutors.json')
-    ).done(function (contentResponse, tutorsResponse) {
-      renderHomepageContent(contentResponse[0]);
-      renderTutorCards(tutorsResponse[0]);
+    $.getJSON('data/homepage-content.json').done(function (contentResponse) {
+      renderHomepageContent(contentResponse);
+    }).fail(function () {
+      var guidelinesSlot = document.getElementById('guidelines-paragraphs-slot');
+      if (guidelinesSlot) {
+        guidelinesSlot.innerHTML += '<p>Using fallback page content because homepage data could not be loaded.</p>';
+      }
+    });
+
+    $.getJSON('data/tutors.json').done(function (tutorsResponse) {
+      renderTutorCards(tutorsResponse);
     }).fail(function () {
       var slot = document.getElementById('tutor-cards-slot');
       if (slot) {
