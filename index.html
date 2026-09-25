@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-    <title>CSIS Group Tutoring</title>
+    <title>CSIS Tutoring</title>
     <!-- Bootstrap core CSS -->
     <link href="http://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet"
       type="text/css">
@@ -47,7 +47,7 @@
           <ul class="nav navbar-nav">
             <li><a href="http://www.siena.edu/cs" target="_blank">CS@Siena</a></li>
             <li><a href="http://www.siena.edu" target="_blank">&nbsp; Siena
-                College</a></li>
+                University</a></li>
           </ul>
         </div>
       </div>
@@ -57,13 +57,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-8">
-            <h2><br>
-            </h2>
-            <h1 id="hero-main-heading" data-slot="hero-main-heading">CSIS Group Tutoring</h1>
+            <h1 id="hero-main-heading" data-slot="hero-main-heading">CSIS Tutoring</h1>
           </div>
-          <div class="col-md-4"> <br>
-            <img id="hero-logo-image" data-slot="hero-logo-image" src="img/DOMEMARK_YellowDomeWhiteText.png" alt="Siena College Logo">
-            <h4 id="hero-department-text" data-slot="hero-department-text">Computer Science Department</h4>
+          <div class="col-md-4">
+            <img id="hero-logo-image" data-slot="hero-logo-image" class="img-responsive center-block" width="250" src="img/DOMEMARK_YellowDomeWhiteText.png" alt="Siena College Logo">
+            <h4 id="hero-department-text" data-slot="hero-department-text">Computer Science </h4>
           </div>
         </div>
       </div>
@@ -74,50 +72,165 @@
     <div class="container bs-docs-container">
       <h2 id="guidelines-heading" data-slot="guidelines-heading">Tutoring Guidelines</h2>
       <div id="guidelines-paragraphs-slot" data-slot="guidelines-paragraphs">
-        <p>
-          During semesters, the schedule
-          below outlines the regular tutor on duty each night and
-          the courses for which they can provide tutoring services.
-          Tutors will be present during the scheduled times in Roger Bacon 350 or an alternate location that you can find posted in RB 350.
-          You will be asked to scan a QR code which will bring you to a Google form you will need to use to sign in.</p>
+        <ol>
+          <li><em><b>No formal appointment required</b> for drop-in sessions. </em></li>
+          <li>We meet in Roger Bacon 350 at the scheduled times. Please fill in the form when you arrive.</li>
+
+          <li>Individual tutoring sessions can be scheduled via Navigate 360.</li>
+        </ol>
+        
       </div>
-      <h2 id="group-schedule-heading" data-slot="group-schedule-heading">Group Tutoring Schedule</h2>
-      <p id="group-schedule-note" data-slot="group-schedule-note">Tutoring is scheduled each week during the active semester; check posted updates in RB 350 for any changes.</p>
+      <h2 id="group-schedule-heading" data-slot="group-schedule-heading">CS Drop-In Tutoring Schedule</h2>
       <div class="row tutoring-content-row">
         <div class="col-md-9">
-          <div id="tutor-cards-slot" data-slot="tutor-cards" class="row tutor-card-grid">
-            <p class="col-xs-12 tutor-loading-message">Loading tutor profiles...</p>
+          <h3>Roger Bacon 350</h3>
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th scope="col">Day</th>
+                  <th scope="col">Time</th>
+                  <th scope="col">Courses</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Monday</th>
+                  <td>2:00 PM - 4:00 PM</td>
+                  <td>CSIS 011</td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">Monday</th>
+                  <td>6:00 PM - 8:00 PM</td>
+                  <td>CSIS 110, 120, 210</td>
+                  
+                </tr>
+                <tr>
+                  <th scope="row">Wednesday</th>
+                  <td>6:00 PM - 8:00 PM</td>
+                  <td>CSIS 110, 120, 210</td>
+                  
+                </tr>
+              </tbody>
+            </table>
+            
           </div>
-          <template id="tutor-card-template">
-            <div class="col-sm-6">
-              <article class="tutor-card">
-                <img src="" alt="" class="tutor-card-photo">
-                <h3 class="tutor-card-name"></h3>
-                <p><strong>Availability:</strong> <span class="tutor-card-availability"></span></p>
-                <p><strong>Courses:</strong> <span class="tutor-card-courses"></span></p>
-              </article>
-            </div>
-          </template>
-          <noscript>
-            <p>Please enable JavaScript to load the latest tutoring profiles from the schedule data file.</p>
-          </noscript>
+          <p> This is a subset of schedule for drop-in tutoring sessions for Computer Science courses. The schedule for all courses can be found on  <a href="https://www.siena.edu/offices/division-of-academic-success/academic-support-and-success/asc/tutoring-services-2">Siena Tutoring Services Webpage.</a></p>
+      
         </div>
+        
+
         <aside class="col-md-3">
-          <div class="sidebar-card">
-            <h3 id="qr-sidebar-title" data-slot="qr-sidebar-title">Student Sign-In</h3>
-            <p id="qr-sidebar-description" data-slot="qr-sidebar-description">Scan this QR code to open the signup form.</p>
-            <img id="qr-sidebar-image" data-slot="qr-sidebar-image" src="img/qrcode_ashely_signup_form.png" alt="Student signup form QR code"
-              class="qr-signup-image">
-            <p><a id="qr-sidebar-link" data-slot="qr-sidebar-link" href="https://forms.gle/L5frS8kDZmkwfA1W9" target="_blank">Open signup form</a></p>
+          <div class="panel panel-default sidebar-card">
+            <div class="panel-heading">
+              <h3 class="panel-title" id="qr-sidebar-title" data-slot="qr-sidebar-title">Student Sign-In</h3>
+            </div>
+            <div class="panel-body">
+              <p id="qr-sidebar-description" data-slot="qr-sidebar-description">Scan this QR code to open the signup form.</p>
+              <img id="qr-sidebar-image" data-slot="qr-sidebar-image" src="img/QR_2026.svg" alt="Student signup form QR code"
+                class="qr-signup-image">
+              <p><a id="qr-sidebar-link" data-slot="qr-sidebar-link" href="https://forms.gle/EzK7tGcEb9bfNd3W8" target="_blank">Or follow this link to open the form</a></p>
+            </div>
           </div>
         </aside>
       </div>
+      <hr>
       <h2>Individual Tutoring</h2>
-      <p>Individual tutoring is also available by appointment.
-      Requests should be made through the link on
-      the <a  href="https://www.siena.edu/offices/sase/academic-support-and-success/asc/tutoring-services-2/">SASE
-      Tutoring Services page</a>.</p>
+      <p>Cannot make it to the drop-in hours? or Prefer one-on-one tutoring?</p>
+      Schedule an individual tutoring session with one of our tutors via Navigate 360.
+      <a href="https://www.siena.edu/offices/division-of-academic-success/academic-support-and-success/asc/tutoring-services-2/#one-on-one%20peer%20tutoring:~:text=throughout%20the%20semester!-,ONE%2DON%2DONE%20PEER%20TUTORING,-This%20academic%20support"> Follow this link for information and steps.</a>
+      
+      <hr>
+      <section aria-labelledby="tutors-heading">
+
+
+      
+        <h2 id="tutors-heading">Tutors</h2>
+        <div class="row tutor-card-grid">
+          <div class="col-xs-12 col-sm-4">
+            <article class="panel panel-default tutor-card">
+              <div class="panel-body">
+              <img class="tutor-card-photo" src="img/Dan.jpg" alt="Daniel Cater">
+              <h3>Daniel Cater</h3>
+              <p><strong>Courses:</strong> Drop-in tutoring</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <article class="panel panel-default tutor-card">
+              <div class="panel-body">
+              <img class="tutor-card-photo" src="img/Dylan.jpg" alt="Dylan Iddings">
+              <h3>Dylan Iddings</h3>
+              <p><strong>Courses:</strong> Drop-in tutoring</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <article class="panel panel-default tutor-card">
+              <div class="panel-body">
+              <img class="tutor-card-photo" src="img/nickzica.jpg" alt="Nicholas Zica">
+              <h3>Nicholas Zica</h3>
+              <p><strong>Courses:</strong> Drop-in tutoring</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row tutor-card-grid">
+          <div class="col-xs-12 col-sm-4">
+            <article class="panel panel-default tutor-card individual-tutor-card">
+              <div class="panel-body">
+              <h3>David Andrew</h3>
+              <p><strong>Courses:</strong> CSIS 110, CSIS 120, CSIS 210</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <article class="panel panel-default tutor-card individual-tutor-card">
+              <div class="panel-body">
+              <h3>Kaitlin DeForest</h3>
+              <p><strong>Course:</strong> CSIS 011</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <article class="panel panel-default tutor-card individual-tutor-card">
+              <div class="panel-body">
+              <h3>Grace Jones</h3>
+              <p><strong>Courses:</strong> CSIS 011, CSIS 110, CSIS 120</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <article class="panel panel-default tutor-card individual-tutor-card">
+              <div class="panel-body">
+              <h3>Patrick Liszewski</h3>
+              <p><strong>Courses:</strong> CSIS 106, CSIS 110, CSIS 120, CSIS 210, CSIS 220, CSIS 390</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <article class="panel panel-default tutor-card individual-tutor-card">
+              <div class="panel-body">
+              <h3>Daniel Millman</h3>
+              <p><strong>Course:</strong> CSIS 110</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <article class="panel panel-default tutor-card individual-tutor-card">
+              <div class="panel-body">
+              <h3>Katelynn Robinson</h3>
+              <p><strong>Course:</strong> CSIS 011</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
       <!-- FOOTER -->
+      <footer>
+      <p class="text-center">© 2026 Siena. For more information please see Academic Success Center or your profesors. </p>
+      </footer>
       <!-- <footer>
         <hr>
         <p class="pull-right"><a href="#">Back to top</a></p>
@@ -137,7 +250,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
-    <script src="js/homepage-renderer.js"></script>
     <!--<script src="/js/bootstrap.min.js"></script>
     <script src="/js/docs.min.js"></script>-->
     <!-- Latest compiled and minified CSS -->
